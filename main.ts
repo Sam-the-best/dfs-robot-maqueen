@@ -11,6 +11,14 @@ IR.IR_callbackUser(function (message) {
         maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CCW, 255)
     } else if (message == 5) {
         maqueen.motorStop(maqueen.Motors.All)
+    } else if (message == 16) {
+        maqueen.servoRun(maqueen.Servos.S1, 0)
+    } else if (message == 17) {
+        maqueen.servoRun(maqueen.Servos.S1, 90)
+    } else if (message == 18) {
+        maqueen.servoRun(maqueen.Servos.S2, 0)
+    } else if (message == 20) {
+        maqueen.servoRun(maqueen.Servos.S2, 180)
     } else {
     	
     }
